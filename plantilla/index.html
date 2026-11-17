@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Parcial Web</title>
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Vue.js CDN (Agregado aquí por si acaso) -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>nose</h1>
+    </header>
+
+    <main id="app">
+        <!-- SECCIÓN 1: Buscador Local -->
+        <section>
+            <h2>1. Buscador Local</h2>
+            <p>Escribe <strong>"elemento 1"</strong> para hacer una prueba:</p>
+            <div class="input-group">
+                <input type="text" id="input-busqueda" placeholder="Buscar...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+            <div id="resultado-busqueda" class="resultado">
+                <p>El resultado aparecerá aquí...</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: Listado / Demostración rápida de Vue.js -->
+        <section>
+            <h2>2. Listado de Secciones (Con Vue.js)</h2>
+            <p>{{ mensajeVue }}</p>
+            <div class="grid">
+                <div class="tarjeta">
+                    <h3>Tarjeta A</h3>
+                    <p>Contenido descriptivo uno.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Tarjeta B</h3>
+                    <p>Contenido descriptivo dos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Visualizador 3D -->
+        <section>
+            <h2>3. Visualizador 3D (Three.js)</h2>
+            <div id="three-container"></div>
+        </section>
+    </main>
+
+    <!-- Archivo JavaScript principal -->
+    <script src="main.js"></script>
+</body>
+</html>
